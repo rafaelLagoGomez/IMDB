@@ -23,14 +23,17 @@ export class Professional {
         this.profession = profession;
     }
 
-    printAttributes(): void {
-        console.log(`Name: ${this.name}`);
-        console.log(`Age: ${this.age}`);
-        console.log(`Weight: ${this.weight}`);
-        console.log(`Height: ${this.height}`);
-        console.log(`Is retired: ${this.isRetired}`);
-        console.log(`Nationality: ${this.nationality}`);
-        console.log(`Number of Oscars: ${this.oscarsNumber}`);
-        console.log(`Profession: ${this.profession}`);
+    printAttributes(): any {
+        let professionalInfo = "";
+        professionalInfo = `Name: ${this.name}
+        Age: ${this.age}
+        Weight: ${this.weight}
+        Height: ${this.height}
+        Is retired: ${this.isRetired}
+        Nationality: ${this.nationality}
+        Number of Oscars: ${this.oscarsNumber}
+        Profession: ${this.profession}`
+        
+        return professionalInfo;
     }
 }

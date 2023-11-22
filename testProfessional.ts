@@ -3,5 +3,7 @@
 
 import { Professional } from "./professional";
 
-const actor = new Professional("lkja", 23, 32, 433, true, "ñldkña", 454, "lajf");
-actor.printAttributes();
+const professional1 = new Professional("Harrison Ford", 81, 85, 185, false, "American", 0, "actor");
+
+const professional1Info = professional1.printAttributes();
+console.log(professional1Info);
